@@ -1,0 +1,24 @@
+<ListingRequest xmlns="http://api.trademe.co.nz/v1">
+    <Category>0002-0356-0032-2273-</Category>
+    <Title>Arty surprise</Title>
+    <Description>
+        <Paragraph>All true art lovers will buy this.</Paragraph>
+    </Description>
+    <StartPrice>7</StartPrice>
+    <BuyNowPrice>9</BuyNowPrice>
+    <Duration>Seven</Duration>
+    <Pickup>Allow</Pickup>
+    <IsBrandNew>true</IsBrandNew>
+    <PhotoIds>
+        <PhotoId>12345678</PhotoId>
+    </PhotoIds>
+    <ShippingOptions>
+        <ShippingOption>
+            <Type>Free</Type>
+        </ShippingOption>
+    </ShippingOptions>
+    <PaymentMethods>
+        <PaymentMethod>CreditCard</PaymentMethod>
+        <PaymentMethod>Cash</PaymentMethod>
+    </PaymentMethods>
+</ListingRequest>
