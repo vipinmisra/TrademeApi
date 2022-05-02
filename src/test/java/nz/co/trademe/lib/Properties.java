@@ -7,9 +7,12 @@ import java.io.IOException;
 
 public class Properties {
 
+    /**
+     * This method reads the property values and returns it as a string
+     * @param propertyName
+     * @return
+     */
     public static String getProperty(String propertyName) {
-
-        // this method reads the property values and returns it as a string
         java.util.Properties property  = new java.util.Properties();
         try {
             File configProperties = new File("src/test/resources/config.properties");
@@ -19,7 +22,6 @@ public class Properties {
         catch (IOException e) {}
 
         return property.getProperty(propertyName);
-
     }
 
 }

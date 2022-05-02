@@ -1,25 +1,27 @@
 package nz.co.trademe.requests;
 
-import org.hamcrest.beans.PropertyUtil;
-import org.junit.Test;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import nz.co.trademe.lib.Properties;
+import java.util.List;
 import static io.restassured.RestAssured.given;
-import static org.junit.Assert.assertTrue;
+import static nz.co.trademe.lib.SpecBuilder.*;
 
 public class Charities {
 
+    /**
+     * This method extracts  description tag values from the response body
+     * @param tag
+     * @return String
+     */
     public static List<String> getTheListOfAllCharities(String tag)
     {
-        // extract the description tag values from the response body
+
         return given()
+                    .spec(getRequestSpec())
                 .when()
-                .get(Properties.getProperty("base_url"))
+                    .get(Properties.getProperty("charities_endpoint"))
                 .then()
-                .extract()
-                .path(tag);
+                    .spec(getResponseSpec())
+                    .extract()
+                    .path(tag);
     }
 }

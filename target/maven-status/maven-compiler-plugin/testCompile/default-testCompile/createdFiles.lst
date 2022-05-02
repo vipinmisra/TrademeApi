@@ -1,0 +1,8 @@
+nz\co\trademe\lib\Properties.class
+nz\co\trademe\steps\ListingsSteps.class
+nz\co\trademe\lib\SpecBuilder.class
+nz\co\trademe\lib\Hooks.class
+nz\co\trademe\lib\TestRunner.class
+nz\co\trademe\requests\Charities.class
+nz\co\trademe\steps\CharitiesSteps.class
+nz\co\trademe\requests\Listings.class
